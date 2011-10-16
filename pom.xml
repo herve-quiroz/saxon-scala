@@ -67,6 +67,14 @@
 
   <!-- ===================================================================== -->
 
+  <properties>
+
+    <scala.version>2.9.1</scala.version>
+
+  </properties>
+
+  <!-- ===================================================================== -->
+
   <dependencies>
 
     <dependency>
@@ -145,6 +153,9 @@
                 </goals>
               </execution>
             </executions>
+            <configuration>
+              <scalaVersion>${scala.version}</scalaVersion>
+            </configuration>
           </plugin>
 
           <plugin>
